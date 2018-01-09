@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BTREE_CPP	src/btree.cpp	2;"	d	language:C++	file:
+GREEN_HPP	src/node/green.cpp	2;"	d	language:C++	file:
+NODE_FACTORY_HPP	src/node_factory.cpp	2;"	d	language:C++	file:
+NODE_HPP	src/node/node.cpp	2;"	d	language:C++	file:
+as_string	src/node/green.cpp	/^    virtual std::string as_string()$/;"	f	language:C++	class:green
+as_string	src/node/node.cpp	/^    virtual std::string as_string()$/;"	f	language:C++	class:node
+btree	src/btree.cpp	/^    btree(node_factory<T> *factory): root(NULL)$/;"	f	language:C++	class:btree
+btree	src/btree.cpp	/^class btree$/;"	c	language:C++	file:
+destroy_tree	src/btree.cpp	/^    void destroy_tree()$/;"	f	language:C++	class:btree
+destroy_tree	src/btree.cpp	/^    void destroy_tree(node<T> *leaf)$/;"	f	language:C++	class:btree	file:
+factory	src/btree.cpp	/^    node_factory<T> *factory;$/;"	m	language:C++	class:btree	file:
+get_instance	src/node_factory.cpp	/^    node<T>* get_instance()$/;"	f	language:C++	class:node_factory
+get_num_nodes	src/node/node.cpp	/^	static size_t get_num_nodes()$/;"	f	language:C++	class:node
+green	src/node/green.cpp	/^class green : public node<T>$/;"	c	language:C++	file:
+insert	src/btree.cpp	/^    void insert(T key)$/;"	f	language:C++	class:btree
+insert	src/btree.cpp	/^    void insert(T key, node<T> *leaf)$/;"	f	language:C++	class:btree	file:
+key_value	src/node/node.cpp	/^    T key_value;$/;"	m	language:C++	class:node	file:
+left	src/node/node.cpp	/^    node *left;$/;"	m	language:C++	class:node	file:
+main	src/main.cpp	/^int main(void)$/;"	f	language:C++
+node	src/node/node.cpp	/^	node<T>()$/;"	f	language:C++	class:node
+node	src/node/node.cpp	/^class node$/;"	c	language:C++	file:
+node_factory	src/node_factory.cpp	/^class node_factory$/;"	c	language:C++	file:
+num_nodes	src/node/node.cpp	/^    static size_t num_nodes;$/;"	m	language:C++	class:node	file:
+num_nodes	src/node/node.cpp	/^size_t node<int>::num_nodes = 0;$/;"	m	language:C++	class:node	file:
+print	src/btree.cpp	/^    void print()$/;"	f	language:C++	class:btree
+print_tree	src/btree.cpp	/^    void print_tree(node<T> *leaf, int padding = 0)$/;"	f	language:C++	class:btree	file:
+right	src/node/node.cpp	/^    node *right;$/;"	m	language:C++	class:node	file:
+root	src/btree.cpp	/^    node<T> *root;$/;"	m	language:C++	class:btree	file:
+search	src/btree.cpp	/^    node<T> *search(T key)$/;"	f	language:C++	class:btree
+search	src/btree.cpp	/^    node<T> *search(T key, node<T> *leaf)$/;"	f	language:C++	class:btree	file:
+~btree	src/btree.cpp	/^    ~btree()$/;"	f	language:C++	class:btree

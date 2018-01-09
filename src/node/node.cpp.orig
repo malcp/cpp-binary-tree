@@ -1,0 +1,29 @@
+#ifndef NODE_HPP
+#define NODE_HPP
+
+#include <iostream>
+#include <string>
+
+template <class T>
+class node
+{
+private:
+  static size_t num_nodes;
+public:
+  T key_value;
+  node *left;
+  node *right;
+
+  node()
+  {
+	  node<T>::num_nodes = 0;
+  }
+
+  virtual std::string as_string()
+  {
+    return "node: " + std::to_string(key_value);
+  }
+};
+
+
+#endif // NODE_HPP
